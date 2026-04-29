@@ -1,0 +1,32 @@
+.footer {
+  background: var(--navy);
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1rem; font-weight: 600;
+  color: var(--white); letter-spacing: 0.08em;
+}
+.logo span { color: var(--accent-lt); }
+
+.info {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.8;
+}
+
+.copy {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 640px) {
+  .footer { flex-direction: column; text-align: center; padding: 40px 24px; }
+}
